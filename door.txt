@@ -1,0 +1,29 @@
+para porta com menu em objeto separado (não linkado)
+
+Objetivo: Este script LSL cria uma porta funcional com menu em um objeto separado (não linkado) ao objeto principal da porta.
+
+Requisitos:
+
+    Dois objetos: um para a porta principal e outro para o menu (botão).
+    O objeto do menu deve ter um script LSL que detecta cliques.
+    O objeto da porta principal deve ter este script LSL.
+      
+Explicação do script:
+
+    state_entry: Cria o objeto do menu e define seus parâmetros (tamanho, posição, rotação e nome).
+    touch_start: Abre a porta quando o objeto principal é tocado.
+    listen: Recebe mensagens do objeto do menu e fecha a porta quando a mensagem "Fechar Porta" é recebida.
+
+      Script LSL para o objeto do menu (botão):
+      Explicação do script:
+
+    state_entry: Define os parâmetros do objeto do menu (tamanho e nome).
+    click_action: Envia a mensagem "Fechar Porta" para o objeto da porta principal quando o botão é clicado.
+
+Observações:
+
+    Este é um exemplo básico de script LSL. Você pode adaptá-lo às suas necessidades específicas.
+    Certifique-se de que os dois objetos estejam no mesmo grupo para que o script funcione corretamente.
+    Você pode usar outros canais de comunicação para evitar interferência com outros scripts.
+    Este script não inclui segurança contra acessos não autorizados.
+
