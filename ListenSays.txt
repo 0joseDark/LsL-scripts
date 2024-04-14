@@ -1,0 +1,36 @@
+LSL Script com Listen, Says e Comparações para Respostas Personalizadas
+Explicação do Script:
+
+    O script usa o evento on chat para lidar com mensagens recebidas no chat local.
+    O script verifica se a mensagem é válida filtrando mensagens enviadas pelo próprio script e mensagens de outros avatares.
+    O script usa llListen para iniciar a escuta no canal 0.
+    O evento on llListenRemove verifica se a escuta foi interrompida e a reativa, garantindo escuta contínua.
+    A função on chat separa a mensagem em comando e argumento usando llSplitString.
+    O comando é convertido para minúsculo usando llToLower para facilitar a comparação.
+    A instrução switch compara o comando com as opções disponíveis.
+    Para cada caso, o script envia a resposta correspondente no canal 0 usando llSay.
+    É possível adicionar mais casos para diferentes comandos e respostas.
+Observações:
+
+    O script pode ser modificado para incluir mais opções e ações.
+    É importante adicionar mais casos para abranger diferentes comandos e respostas desejadas.
+    O script pode ser expandido para usar um arquivo de texto externo com uma lista de comandos e respostas, permitindo fácil adição e remoção de opções.
+
+Exemplos de Uso:
+
+    Crie um chatbot simples que responda a perguntas frequentes sobre o seu objeto ou local no Second Life.
+    Crie um sistema de atendimento ao cliente que responda a dúvidas e direciona usuários para o suporte adequado.
+    Crie um jogo interativo onde os jogadores respondem a perguntas ou comandos para progredir no jogo.
+
+Dicas:
+
+    Utilize comentários no script para facilitar a leitura e compreensão do código.
+    Teste o script com diferentes comandos e mensagens para garantir que funcione corretamente.
+    Use a função llDebug para imprimir mensagens no console para facilitar a depuração de erros.
+
+Lembre-se:
+
+    É importante seguir as diretrizes de design do Second Life ao criar scripts para garantir que seus scripts sejam eficientes e não causem problemas para outros usuários.
+    Você pode encontrar mais informações sobre o scripting do Second Life na documentação oficial: https://wiki.secondlife.com/wiki/LSL_Portal
+
+
