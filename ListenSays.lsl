@@ -1,4 +1,4 @@
-//  LSL Script com Listen, Says e Comparações para Respostas Personalizadas
+//  LSL Script com llListen(0), llSay(0) e Comparações para Respostas Personalizadas
 default {
   listen_handle = llListen(0); // Canal para escuta
 }
